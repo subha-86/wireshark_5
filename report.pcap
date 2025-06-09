@@ -1,100 +1,102 @@
-1. TCP SYN from client to server (58000 → 443)
-2. TCP SYN-ACK from server to client (443 → 58000)
-3. TCP ACK from client to server (58000 → 443)
-4. TLSv1.2 Client Hello from client to server
-5. TLSv1.2 Server Hello from server to client
-6. TLSv1.2 Application Data from client to server
-7. TCP ACK from server to client (443 → 58000)
-8. ARP Request: Who has 10.0.0.2?
-9. ARP Reply: 10.0.0.2 is at 00:0c:29:aa:bb:cc
-10. UDP Query1 from client to 8.8.4.4 (63755 → 443)
-11. UDP Query2 from client to 8.8.4.4 (63756 → 443)
-12. UDP Reply1 (28 bytes) from 8.8.4.4 to client
-13. UDP Reply2 (579 bytes) from 8.8.4.4 to client
-14. UDP Reply3 (22 bytes) from 8.8.4.4 to client
-15. TCP FIN from client to server (58000 → 443)
-16. TCP ACK from server to client (443 → 58000)
-17. ICMP Echo Request from client to 8.8.8.8
-18. ICMP Echo Reply from 8.8.8.8 to client
-19. TCP PSH, ACK from client to server (58000 → 443)
-20. TCP ACK from server to client (443 → 58000)
-21. TLSv1.2 Application Data from server to client
-22. ARP Request: Who has 10.0.0.5?
-23. ARP Reply: 10.0.0.5 is at 00:0c:29:dd:ee:ff
-24. UDP Query from client to 1.1.1.1 (60000 → 53)
-25. UDP Reply from 1.1.1.1 to client (53 → 60000)
-26. TCP SYN from client to server (58001 → 443)
-27. TCP SYN-ACK from server to client (443 → 58001)
-28. TCP ACK from client to server (58001 → 443)
-29. TLSv1.2 Client Hello from client to server
-30. TLSv1.2 Server Hello from server to client
-31. TCP ACK from server to client (443 → 58001)
-32. UDP Query1 from client to 8.8.4.4 (63757 → 443)
-33. UDP Query2 from client to 8.8.4.4 (63758 → 443)
-34. UDP Reply1 (30 bytes) from 8.8.4.4 to client
-35. UDP Reply2 (570 bytes) from 8.8.4.4 to client
-36. UDP Reply3 (24 bytes) from 8.8.4.4 to client
-37. TCP FIN from client to server (58001 → 443)
-38. TCP ACK from server to client (443 → 58001)
-39. ICMP Echo Request from client to 8.8.8.8
-40. ICMP Echo Reply from 8.8.8.8 to client
-41. TCP PSH, ACK from client to server (58001 → 443)
-42. TCP ACK from server to client (443 → 58001)
-43. TLSv1.2 Application Data from server to client
-44. ARP Request: Who has 10.0.0.10?
-45. ARP Reply: 10.0.0.10 is at 00:0c:29:aa:bb:dd
-46. UDP Query from client to 8.8.8.8 (64000 → 53)
-47. UDP Reply from 8.8.8.8 to client (53 → 64000)
-48. TCP SYN from client to server (58002 → 443)
-49. TCP SYN-ACK from server to client (443 → 58002)
-50. TCP ACK from client to server (58002 → 443)
-51. TLSv1.2 Client Hello from client to server
-52. TLSv1.2 Server Hello from server to client
-53. TCP ACK from server to client (443 → 58002)
-54. UDP Query1 from client to 8.8.4.4 (63759 → 443)
-55. UDP Query2 from client to 8.8.4.4 (63760 → 443)
-56. UDP Reply1 (35 bytes) from 8.8.4.4 to client
-57. UDP Reply2 (590 bytes) from 8.8.4.4 to client
-58. UDP Reply3 (26 bytes) from 8.8.4.4 to client
-59. TCP FIN from client to server (58002 → 443)
-60. TCP ACK from server to client (443 → 58002)
-61. ICMP Echo Request from client to 8.8.8.8
-62. ICMP Echo Reply from 8.8.8.8 to client
-63. TCP PSH, ACK from client to server (58002 → 443)
-64. TCP ACK from server to client (443 → 58002)
-65. TLSv1.2 Application Data from server to client
-66. ARP Request: Who has 10.0.0.20?
-67. ARP Reply: 10.0.0.20 is at 00:0c:29:cc:dd:ee
-68. UDP Query from client to 8.8.8.8 (65000 → 53)
-69. UDP Reply from 8.8.8.8 to client (53 → 65000)
-70. TCP SYN from client to server (58003 → 443)
-71. TCP SYN-ACK from server to client (443 → 58003)
-72. TCP ACK from client to server (58003 → 443)
-73. TLSv1.2 Client Hello from client to server
-74. TLSv1.2 Server Hello from server to client
-75. TCP ACK from server to client (443 → 58003)
-76. UDP Query1 from client to 8.8.4.4 (63761 → 443)
-77. UDP Query2 from client to 8.8.4.4 (63762 → 443)
-78. UDP Reply1 (40 bytes) from 8.8.4.4 to client
-79. UDP Reply2 (600 bytes) from 8.8.4.4 to client
-80. UDP Reply3 (28 bytes) from 8.8.4.4 to client
-81. TCP FIN from client to server (58003 → 443)
-82. TCP ACK from server to client (443 → 58003)
-83. ICMP Echo Request from client to 8.8.8.8
-84. ICMP Echo Reply from 8.8.8.8 to client
-85. TCP PSH, ACK from client to server (58003 → 443)
-86. TCP ACK from server to client (443 → 58003)
-87. TLSv1.2 Application Data from server to client
-88. ARP Request: Who has 10.0.0.25?
-89. ARP Reply: 10.0.0.25 is at 00:0c:29:ff:ee:dd
-90. UDP Query from client to 8.8.8.8 (66000 → 53)
-91. UDP Reply from 8.8.8.8 to client (53 → 66000)
-92. TCP SYN from client to server (58004 → 443)
-93. TCP SYN-ACK from server to client (443 → 58004)
-94. TCP ACK from client to server (58004 → 443)
-95. TLSv1.2 Client Hello from client to server
-96. TLSv1.2 Server Hello from server to client
-97. TCP ACK from server to client (443 → 58004)
-98. UDP Query1 from client to 8.8.4.4 (63763 → 443)
-99. UDP Query2 from client to 8.8.4.4 (63764 → 443)
-100. UDP Reply1 (45 bytes) from 8.8.4.4 to client
+
+1. TCP SYN from CLIENT\_IP to SERVER\_IP (PORT\_A → PORT\_B)
+2. TCP SYN-ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_A)
+3. TCP ACK from CLIENT\_IP to SERVER\_IP (PORT\_A → PORT\_B)
+4. TLSv1.2 Client Hello from CLIENT\_IP to SERVER\_IP
+5. TLSv1.2 Server Hello from SERVER\_IP to CLIENT\_IP
+6. TLSv1.2 Application Data from CLIENT\_IP to SERVER\_IP
+7. TCP ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_A)
+8. ARP Request: Who has IP1?
+9. ARP Reply: IP1 is at XX\:XX\:XX\:XX\:XX\:XX
+10. UDP Query1 from CLIENT\_IP to DNS\_SERVER\_1 (PORT\_C → PORT\_D)
+11. UDP Query2 from CLIENT\_IP to DNS\_SERVER\_1 (PORT\_E → PORT\_D)
+12. UDP Reply1 from DNS\_SERVER\_1 to CLIENT\_IP
+13. UDP Reply2 from DNS\_SERVER\_1 to CLIENT\_IP
+14. UDP Reply3 from DNS\_SERVER\_1 to CLIENT\_IP
+15. TCP FIN from CLIENT\_IP to SERVER\_IP (PORT\_A → PORT\_B)
+16. TCP ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_A)
+17. ICMP Echo Request from CLIENT\_IP to DNS\_SERVER\_2
+18. ICMP Echo Reply from DNS\_SERVER\_2 to CLIENT\_IP
+19. TCP PSH, ACK from CLIENT\_IP to SERVER\_IP (PORT\_A → PORT\_B)
+20. TCP ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_A)
+21. TLSv1.2 Application Data from SERVER\_IP to CLIENT\_IP
+22. ARP Request: Who has IP2?
+23. ARP Reply: IP2 is at XX\:XX\:XX\:XX\:XX\:XX
+24. UDP Query from CLIENT\_IP to DNS\_SERVER\_3 (PORT\_F → PORT\_D)
+25. UDP Reply from DNS\_SERVER\_3 to CLIENT\_IP
+26. TCP SYN from CLIENT\_IP to SERVER\_IP (PORT\_G → PORT\_B)
+27. TCP SYN-ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_G)
+28. TCP ACK from CLIENT\_IP to SERVER\_IP (PORT\_G → PORT\_B)
+29. TLSv1.2 Client Hello from CLIENT\_IP to SERVER\_IP
+30. TLSv1.2 Server Hello from SERVER\_IP to CLIENT\_IP
+31. TCP ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_G)
+32. UDP Query1 from CLIENT\_IP to DNS\_SERVER\_1 (PORT\_H → PORT\_D)
+33. UDP Query2 from CLIENT\_IP to DNS\_SERVER\_1 (PORT\_I → PORT\_D)
+34. UDP Reply1 from DNS\_SERVER\_1 to CLIENT\_IP
+35. UDP Reply2 from DNS\_SERVER\_1 to CLIENT\_IP
+36. UDP Reply3 from DNS\_SERVER\_1 to CLIENT\_IP
+37. TCP FIN from CLIENT\_IP to SERVER\_IP (PORT\_G → PORT\_B)
+38. TCP ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_G)
+39. ICMP Echo Request from CLIENT\_IP to DNS\_SERVER\_2
+40. ICMP Echo Reply from DNS\_SERVER\_2 to CLIENT\_IP
+41. TCP PSH, ACK from CLIENT\_IP to SERVER\_IP (PORT\_G → PORT\_B)
+42. TCP ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_G)
+43. TLSv1.2 Application Data from SERVER\_IP to CLIENT\_IP
+44. ARP Request: Who has IP3?
+45. ARP Reply: IP3 is at XX\:XX\:XX\:XX\:XX\:XX
+46. UDP Query from CLIENT\_IP to DNS\_SERVER\_2 (PORT\_J → PORT\_D)
+47. UDP Reply from DNS\_SERVER\_2 to CLIENT\_IP
+48. TCP SYN from CLIENT\_IP to SERVER\_IP (PORT\_K → PORT\_B)
+49. TCP SYN-ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_K)
+50. TCP ACK from CLIENT\_IP to SERVER\_IP (PORT\_K → PORT\_B)
+51. TLSv1.2 Client Hello from CLIENT\_IP to SERVER\_IP
+52. TLSv1.2 Server Hello from SERVER\_IP to CLIENT\_IP
+53. TCP ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_K)
+54. UDP Query1 from CLIENT\_IP to DNS\_SERVER\_1 (PORT\_L → PORT\_D)
+55. UDP Query2 from CLIENT\_IP to DNS\_SERVER\_1 (PORT\_M → PORT\_D)
+56. UDP Reply1 from DNS\_SERVER\_1 to CLIENT\_IP
+57. UDP Reply2 from DNS\_SERVER\_1 to CLIENT\_IP
+58. UDP Reply3 from DNS\_SERVER\_1 to CLIENT\_IP
+59. TCP FIN from CLIENT\_IP to SERVER\_IP (PORT\_K → PORT\_B)
+60. TCP ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_K)
+61. ICMP Echo Request from CLIENT\_IP to DNS\_SERVER\_2
+62. ICMP Echo Reply from DNS\_SERVER\_2 to CLIENT\_IP
+63. TCP PSH, ACK from CLIENT\_IP to SERVER\_IP (PORT\_K → PORT\_B)
+64. TCP ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_K)
+65. TLSv1.2 Application Data from SERVER\_IP to CLIENT\_IP
+66. ARP Request: Who has IP4?
+67. ARP Reply: IP4 is at XX\:XX\:XX\:XX\:XX\:XX
+68. UDP Query from CLIENT\_IP to DNS\_SERVER\_2 (PORT\_N → PORT\_D)
+69. UDP Reply from DNS\_SERVER\_2 to CLIENT\_IP
+70. TCP SYN from CLIENT\_IP to SERVER\_IP (PORT\_O → PORT\_B)
+71. TCP SYN-ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_O)
+72. TCP ACK from CLIENT\_IP to SERVER\_IP (PORT\_O → PORT\_B)
+73. TLSv1.2 Client Hello from CLIENT\_IP to SERVER\_IP
+74. TLSv1.2 Server Hello from SERVER\_IP to CLIENT\_IP
+75. TCP ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_O)
+76. UDP Query1 from CLIENT\_IP to DNS\_SERVER\_1 (PORT\_P → PORT\_D)
+77. UDP Query2 from CLIENT\_IP to DNS\_SERVER\_1 (PORT\_Q → PORT\_D)
+78. UDP Reply1 from DNS\_SERVER\_1 to CLIENT\_IP
+79. UDP Reply2 from DNS\_SERVER\_1 to CLIENT\_IP
+80. UDP Reply3 from DNS\_SERVER\_1 to CLIENT\_IP
+81. TCP FIN from CLIENT\_IP to SERVER\_IP (PORT\_O → PORT\_B)
+82. TCP ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_O)
+83. ICMP Echo Request from CLIENT\_IP to DNS\_SERVER\_2
+84. ICMP Echo Reply from DNS\_SERVER\_2 to CLIENT\_IP
+85. TCP PSH, ACK from CLIENT\_IP to SERVER\_IP (PORT\_O → PORT\_B)
+86. TCP ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_O)
+87. TLSv1.2 Application Data from SERVER\_IP to CLIENT\_IP
+88. ARP Request: Who has IP5?
+89. ARP Reply: IP5 is at XX\:XX\:XX\:XX\:XX\:XX
+90. UDP Query from CLIENT\_IP to DNS\_SERVER\_2 (PORT\_R → PORT\_D)
+91. UDP Reply from DNS\_SERVER\_2 to CLIENT\_IP
+92. TCP SYN from CLIENT\_IP to SERVER\_IP (PORT\_S → PORT\_B)
+93. TCP SYN-ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_S)
+94. TCP ACK from CLIENT\_IP to SERVER\_IP (PORT\_S → PORT\_B)
+95. TLSv1.2 Client Hello from CLIENT\_IP to SERVER\_IP
+96. TLSv1.2 Server Hello from SERVER\_IP to CLIENT\_IP
+97. TCP ACK from SERVER\_IP to CLIENT\_IP (PORT\_B → PORT\_S)
+98. UDP Query1 from CLIENT\_IP to DNS\_SERVER\_1 (PORT\_T → PORT\_D)
+99. UDP Query2 from CLIENT\_IP to DNS\_SERVER\_1 (PORT\_U → PORT\_D)
+100. UDP Reply1 from DNS\_SERVER\_1 to CLIENT\_IP
+
